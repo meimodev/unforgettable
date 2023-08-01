@@ -2,47 +2,146 @@ import {Fade, Carousel} from "../lib/reveal";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 export default function Home() {
 
-    const _buildPostCard = ({title}) =>
-        <div
+    const videoMainUrl = "";
+    const destinations = [
+        {
+            name: "Kengkang Waterfall",
+            link: "kengkang",
+            images: [
+                "https://i.ibb.co/X3yGjdH/1-kengkang.jpg",
+                "https://i.ibb.co/Jn7NkcZ/2-kengkang.jpg",
+            ],
+        },
+        {
+            name: "Ranolewo Hot Spring",
+            link: "ranolewo",
+            images: [
+                "https://i.ibb.co/MpQvJ6z/1-ranolewo.jpg",
+                "https://i.ibb.co/WH5tDtx/2-ranolewo.jpg",
+            ],
+        },
+        {
+            name: "Watu Pinawetengan Stone",
+            link: "pinawetengan",
+            images: [
+                "https://i.ibb.co/r5ztqgV/1-watupinawetengan.jpg",
+                "https://i.ibb.co/VSxXv2y/2-watupinawetengan.jpg",
+            ],
+        },
+        {
+            name: "Moraya Fortress",
+            link: "moraya",
+            images: [
+                "https://i.ibb.co/DD4Jx08/1-benteng-moraya.jpg",
+                "https://i.ibb.co/SQtBp1M/2-benteng-moraya.jpg",
+            ],
+        },
+        {
+            name: "Rok rok Waterfall",
+            link: "rokrok",
+            images: [
+                "https://i.ibb.co/hXT8S7b/1-rokrok-waterfall-kembes.jpg",
+                "https://i.ibb.co/R647ySt/2-rokrok-waterfall-kembes.jpg",
+            ],
+        },
+        {
+            name: "Ror Beach",
+            link: "ror",
+            images: [
+                "https://i.ibb.co/HHbW10M/1-pantai-ror.jpg",
+                "https://i.ibb.co/pyDqk45/2-pantai-ror.jpg",
+            ],
+        },
+
+    ];
+    const resorts = [
+
+        {
+            name: "Yama Resort",
+            images: [
+                "https://i.ibb.co/RNVxh0F/1-yamaresort.jpg",
+                "https://i.ibb.co/n1g0CJF/2-yamaresort.jpg",
+            ],
+        },
+        {
+            name: "D 88",
+            images: [
+                "https://i.ibb.co/C8SF1FP/1-D88.jpg",
+                "https://i.ibb.co/Kb7R9mf/2-D88.jpg",
+            ],
+        },
+        {
+            name: "Camp James",
+            images: [
+                "https://i.ibb.co/4Z0Rqvv/1-camp-james.jpg",
+                "https://i.ibb.co/yd3z96j/2-camp-james.jpg",
+            ],
+        },
+        {
+            name: "Luna's Kitchen & Villa",
+            images: [
+                "https://i.ibb.co/9yjM6W1/1-lunas.jpg",
+                "https://i.ibb.co/Qm7229g/2-lunas.jpg",
+            ],
+        },
+        // {
+        //     name: "Wale Walanda",
+        //     images: [
+        //         "",
+        //         "",
+        //     ],
+        // },
+        // {
+        //     name: "Astound Villa",
+        //     images: [
+        //         "",
+        //         "",
+        //     ],
+        // },
+
+    ];
+
+    const _buildDestinationCard = ({title, imageUrl, keyLink}) =>
+        <Link
+            href={"/destinations/"+keyLink}
             className="flex-1 flex-col flex  hover:text-primary-400  hover:-translate-y-2 transition ease-out duration-500 cursor-pointer ">
-            <img src="/test.jpg" className="h-[9rem] sm:h-[13rem] md:h-[17rem] lg:h-[20rem]  w-full rounded-lg"/>
+            <img src={imageUrl} className="h-[9rem] sm:h-[13rem] md:h-[17rem] lg:h-[20rem]  w-full rounded-lg"/>
             <div className="text-center uppercase pt-2  font-bold">{title}</div>
-        </div>;
+        </Link>;
 
     const _buildResortCardItem = ({title, location, price}) =>
-            <Fade
-                cascade
-                triggerOnce
-                damping={0.7}
-                duration={500}
-                className="flex-1 flex-col flex rounded-xl px-6">
+        <Fade
+            cascade
+            triggerOnce
+            damping={0.7}
+            duration={500}
+            className="flex-1 flex-col flex rounded-xl px-6">
 
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-                <img src="/test.jpg" className="h-[20rem] sm:h-[30rem] md:h-[35rem] xl:h-[45rem] w-full rounded-lg"/>
-                <div className="text-center uppercase pt-5 text-lg font-bold">{title}</div>
-                <div className="flex gap-6 justify-center pt-4 items-center">
-                    <div className="flex gap-1">
+            <img src="/test.jpg" className="h-[20rem] sm:h-[30rem] md:h-[35rem] xl:h-[45rem] w-full rounded-lg"/>
+            <div className="text-center uppercase pt-5 text-lg font-bold">{title}</div>
+            <div className="flex gap-6 justify-center pt-4 items-center">
+                <div className="flex gap-1">
                     <span className="material-symbols-outlined">location_on</span>
-                        <div>{location}</div>
-                    </div>
-
-                    <div className="flex gap-1">
-                   <span className="material-symbols-outlined">sell</span>
-                        <div>{price}</div>
-                    </div>
-
+                    <div>{location}</div>
                 </div>
-                <div
-                    className="bg-primary-400 rounded-xl p-3 mb-20 mt-6 text-white cursor-pointer hover:-translate-y-2 transition ease-out duration-500">
-                    Book Now
+
+                <div className="flex gap-1">
+                    <span className="material-symbols-outlined">sell</span>
+                    <div>{price}</div>
                 </div>
-            </Fade>
+
+            </div>
+            <div
+                className="bg-primary-400 rounded-xl p-3 mb-20 mt-6 text-white cursor-pointer hover:-translate-y-2 transition ease-out duration-500">
+                Book Now
+            </div>
+        </Fade>
     ;
 
     const _buildSectionTitle = ({title, desc}) =>
@@ -77,6 +176,11 @@ export default function Home() {
 
     return (
         <div className="">
+            <link rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+            <link rel="stylesheet"
+                  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 
             <section id="navbar">
                 <NavBar/>
@@ -88,7 +192,7 @@ export default function Home() {
                         autoPlay
                         muted
                         loop
-                        src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        src="/video.mp4"
                         className="h-full w-full"
                     />
                 </div>
@@ -120,16 +224,34 @@ export default function Home() {
 
                 <Fade delay={500} cascade damping={0.5} className="max-w-[90rem] xl:mx-auto mx-3 md:mx-6">
                     <div className="flex justify-around my-3  gap-3 lg:gap-12 lg:my-12">
-                        <_buildPostCard title="Page Spring"/>
-                        <_buildPostCard title="Lake Tondano"/>
+                        <_buildDestinationCard
+                            title={destinations[0].name}
+                            keyLink={destinations[0].link}
+                            imageUrl={destinations[0].images[0]}/>
+                        <_buildDestinationCard
+                            title={destinations[1].name}
+                            keyLink={destinations[1].link}
+                            imageUrl={destinations[1].images[0]}/>
                     </div>
                     <div className="flex justify-around my-3  gap-3 lg:gap-12 lg:my-12">
-                        <_buildPostCard title="Lake Tampusu"/>
-                        <_buildPostCard title="Jappanese Cave"/>
+                        <_buildDestinationCard
+                            title={destinations[2].name}
+                            keyLink={destinations[2].link}
+                            imageUrl={destinations[2].images[0]}/>
+                        <_buildDestinationCard
+                            title={destinations[3].name}
+                            keyLink={destinations[3].link}
+                            imageUrl={destinations[3].images[0]}/>
                     </div>
                     <div className="flex justify-around my-3 gap-3 lg:gap-12 lg:my-12">
-                        <_buildPostCard title="Fort Moraya"/>
-                        <_buildPostCard title="Tatempengan Hill"/>
+                        <_buildDestinationCard
+                            title={destinations[4].name}
+                            keyLink={destinations[4].link}
+                            imageUrl={destinations[4].images[0]}/>
+                        <_buildDestinationCard
+                            title={destinations[5].name}
+                            keyLink={destinations[5].link}
+                            imageUrl={destinations[5].images[0]}/>
                     </div>
                 </Fade>
             </section>
