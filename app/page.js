@@ -63,6 +63,7 @@ export default function Home() {
         {
             name: "Yama Resort",
             location: "Tondano",
+            href: "https://goo.gl/maps/u7kmk3jRSaAyYwoo9",
             images: [
                 "https://i.ibb.co/RNVxh0F/1-yamaresort.jpg",
                 "https://i.ibb.co/n1g0CJF/2-yamaresort.jpg",
@@ -71,6 +72,7 @@ export default function Home() {
         {
             name: "D 88",
             location: "Tondano",
+            href: "https://goo.gl/maps/zf4oxeFVbZtQJZhe6",
             images: [
                 "https://i.ibb.co/C8SF1FP/1-D88.jpg",
                 "https://i.ibb.co/Kb7R9mf/2-D88.jpg",
@@ -79,6 +81,7 @@ export default function Home() {
         {
             name: "Camp James",
             location: "Remboken",
+            href: "https://goo.gl/maps/QLC7TUUC8MBzY2wf6",
             images: [
                 "https://i.ibb.co/4Z0Rqvv/1-camp-james.jpg",
                 "https://i.ibb.co/yd3z96j/2-camp-james.jpg",
@@ -87,6 +90,7 @@ export default function Home() {
         {
             name: "Luna's Kitchen & Villa",
             location: "Tondano",
+            href: "https://goo.gl/maps/WPwfcgMcihh7iEcL8",
             images: [
                 "https://i.ibb.co/9yjM6W1/1-lunas.jpg",
                 "https://i.ibb.co/Qm7229g/2-lunas.jpg",
@@ -95,14 +99,16 @@ export default function Home() {
         // {
         //     name: "Wale Walanda",
         // location: "Tondano",
+        // href: "https://goo.gl/maps/uVVgAvHhdudvMtcTA",
         //     images: [
         //         "",
         //         "",
         //     ],
         // },
         // {
-        //     name: "Astound Villa",
+        //     name: "Astound Hill",
         // location: "Tondano",
+        // href: "https://goo.gl/maps/3hL87TPLtGabPrSA6",
         //     images: [
         //         "",
         //         "",
@@ -113,38 +119,30 @@ export default function Home() {
 
     const _buildDestinationCard = ({title, imageUrl, keyLink}) =>
         <Link
-            href={"/destinations/"+keyLink}
-            className="flex-1 flex-col flex  hover:text-primary-600  hover:-translate-y-2 transition ease-out duration-500 cursor-pointer ">
+            href={"/destinations/" + keyLink}
+            className="flex-1 flex-col flex text-neutral-500  hover:text-primary-600  hover:-translate-y-2 transition ease-out duration-500 cursor-pointer ">
             <img src={imageUrl} className="h-[9rem] sm:h-[13rem] md:h-[17rem] lg:h-[20rem]  w-full rounded-lg"/>
-            <div className="text-center uppercase pt-2  font-bold">{title}</div>
+            <div className="text-center uppercase pt-2 font-bold ">{title}</div>
         </Link>;
 
-    const _buildResortCardItem = ({title, location,  imageUrl}) =>
+    const _buildResortCardItem = ({title, location, imageUrl, href}) =>
         <Fade
             cascade
             triggerOnce
             damping={0.7}
             duration={500}
-            className="flex-1 flex-col flex rounded-xl px-6">
+            className="flex-col flex rounded-xl px-6 text-neutral-500">
 
             <img src={imageUrl} className="h-[20rem] sm:h-[30rem] w-full rounded-lg object-cover"/>
             <div className="text-center uppercase pt-5 text-lg font-bold">{title}</div>
-            <div className="flex gap-6 justify-center pt-4 items-center">
-                <div className="flex gap-1">
+
+            <a href={href} target="_blank"
+               className="bg-primary-600 rounded-xl p-3 mb-20 mt-6 text-white cursor-pointer w-full mx-auto max-w-lg hover:-translate-y-2 transition ease-out duration-500">
+                <div className="flex gap-1 justify-center">
                     <span className="material-symbols-outlined">location_on</span>
                     <div>{location}</div>
                 </div>
-
-                {/*<div className="flex gap-1">*/}
-                {/*    <span className="material-symbols-outlined">sell</span>*/}
-                {/*    <div>{price}</div>*/}
-                {/*</div>*/}
-
-            </div>
-            <div
-                className="bg-primary-600 rounded-xl p-3 mb-20 mt-6 text-white cursor-pointer hover:-translate-y-2 transition ease-out duration-500">
-                Book Now
-            </div>
+            </a>
         </Fade>
     ;
 
@@ -159,7 +157,7 @@ export default function Home() {
             <Fade duration={250}
                   damping={0.20}
                   cascade
-                  className="uppercase text-4xl">
+                  className="uppercase text-4xl text-neutral-500">
 
                 {title}
             </Fade>
@@ -167,19 +165,19 @@ export default function Home() {
 
 
     const _buildSocialMediaButton = ({title, iconSrc, href}) =>
-        <a href={href} target="_blank" className="max-w-4xl w-full flex justify-center gap-3 cursor-pointer group">
-            <div
-                className="border-transparent  border-2 p-3 rounded-md flex items-center gap-3 transition group-hover:border-primary-600 duration-500 ease-out group-hover:-translate-y-1 ">
+        <div className="max-w-4xl  flex justify-center gap-3 cursor-pointer group">
+            <a href={href} target="_blank"
+               className="border-transparent border-b-neutral-500 border-2 p-3 rounded-md flex items-center gap-3 transition group-hover:border-primary-600 duration-500 ease-out group-hover:-translate-y-1 ">
                 <img src={iconSrc}
                      alt="social media icon"
                      className="h-5 w-5"
                 />
                 <span className="text-sm">{title}</span>
-            </div>
-        </a>
+            </a>
+        </div>
 
     return (
-        <div className="">
+        <div className="scroll-smooth">
             <link rel="stylesheet"
                   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 
@@ -204,7 +202,7 @@ export default function Home() {
                 <div className="absolute left-0 right-0 top-0 bottom-0 z-20">
                     <div className="h-full text-4xl flex-1 flex flex-col justify-center ">
                         <Fade cascade damping={1} direction={"down"}
-                              className="uppercase text-center font-black text-white">
+                              className="uppercase text-center font-black text-neutral-300">
                             <div className="">EXPLORE</div>
                             <div className="flex gap-2 justify-center">
                                 <Fade cascade delay={750} damping={1} direction={"down"}>
@@ -260,15 +258,15 @@ export default function Home() {
                 </Fade>
             </section>
 
-            <section id="Resorts" className="text-center py-12 my-12">
+            <section id="resorts" className="text-center py-12 my-12">
 
                 <_buildSectionTitle title="Resorts" desc="Stay the night"/>
 
                 <Carousel autoPlay
                           infiniteLoop
-                          interval={4000}
+                          interval={2000}
                           showThumbs={false}
-                          showArrows={false}
+                          showArrows={true}
                           showStatus={false}
                           className="xl:max-w-[80rem] xl:mx-auto"
                 >
@@ -277,7 +275,14 @@ export default function Home() {
                     {/*<_buildResortCardItem title="HOTEL TOUDANO" price="Rp. 500.000 / Night" location="Amurang"/>*/}
                     {/*<_buildResortCardItem title="SULTAN YAHUDI" price="Rp. 500.000 / Night" location="Langowan"/>*/}
 
-                    {resorts.map((e,i) => <_buildResortCardItem key={i} title={e.name} location={e.location} imageUrl={e.images[0]} />)}
+                    {resorts.map((e, i) =>
+                        <_buildResortCardItem
+                            key={i}
+                            title={e.name}
+                            location={e.location}
+                            href={e.href}
+                            imageUrl={e.images[0]}/>
+                    )}
 
                 </Carousel>
 
@@ -288,7 +293,7 @@ export default function Home() {
 
                 <_buildSectionTitle title="Contacts" desc="get in touch"/>
 
-                <div className="max-w-6xl flex flex-col lg:flex-row justify-center gap-3 mx-auto">
+                <div className="max-w-6xl flex flex-col items-center justify-center gap-10 mx-auto">
 
                     <_buildSocialMediaButton
                         title="Unforgettable Minahasa"
@@ -302,7 +307,7 @@ export default function Home() {
 
                     <_buildSocialMediaButton
                         title="@unforgettableminahasa"
-                        href="www.tiktok.com/@unforgettableminahasa"
+                        href="https://www.tiktok.com/@unforgettableminahasa"
                         iconSrc="/icons/tiktok.svg"/>
 
                     {/*<_buildSocialMediaButton*/}
@@ -311,7 +316,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="footer" className="pt-20 ">
+            <section id="footer" className="pt-32">
                 <Footer/>
             </section>
 

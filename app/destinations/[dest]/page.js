@@ -6,12 +6,13 @@ export default function Page({params}) {
     const destinations = [
         {
             name: "Kengkang Waterfall",
+            alt: "Air Terjun Kengkang",
             link: "kengkang",
             images: [
                 "https://i.ibb.co/X3yGjdH/1-kengkang.jpg",
                 "https://i.ibb.co/Jn7NkcZ/2-kengkang.jpg",
             ],
-            embedLink:"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2922.3991586146662!2d124.7338475895366!3d1.2818942754187255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTYnNTUuMyJOIDEyNMKwNDQnMDguNyJF!5e0!3m2!1sen!2sid!4v1690896309296!5m2!1sen!2sid",
+            embedLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2922.3991586146662!2d124.7338475895366!3d1.2818942754187255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTYnNTUuMyJOIDEyNMKwNDQnMDguNyJF!5e0!3m2!1sen!2sid!4v1690896309296!5m2!1sen!2sid",
             parts: [
                 "Air Terjun Kengkang berlokasi di Desa Timbukar, Kec. Sonder, Kab. Minahasa.",
                 "Air Terjun Kengkang memiliki daya tarik yang luar biasa, bunyi khas air terjun yang jatuh ditambah dengan pepohonan yang mengelilingi tempat ini sehingga menciptakan suasana yang tenang dan nyaman. tidak hanya itu Air Terjun Kengkang juga menyediakan fasilitas repling dan juga air terjun ini bisa dimanfaatkan untuk kegiatan canoeing atau mendayung. dan tentu saja di air terjun ini banyak spot foto yang bagus dan instagramable.",
@@ -23,6 +24,7 @@ export default function Page({params}) {
         },
         {
             name: "Ranolewo Hot Spring",
+            alt: "Mata Air Panas Ranolewo",
             link: "ranolewo",
             images: [
                 "https://i.ibb.co/MpQvJ6z/1-ranolewo.jpg",
@@ -40,6 +42,7 @@ export default function Page({params}) {
         },
         {
             name: "Watu Pinawetengan Stone",
+            alt: "Batu Pinawetengan",
             link: "pinawetengan",
             images: [
                 "https://i.ibb.co/r5ztqgV/1-watupinawetengan.jpg",
@@ -63,6 +66,7 @@ export default function Page({params}) {
         },
         {
             name: "Moraya Fortress",
+            alt: "Benteng Moraya",
             link: "moraya",
             images: [
                 "https://i.ibb.co/DD4Jx08/1-benteng-moraya.jpg",
@@ -81,6 +85,7 @@ export default function Page({params}) {
         },
         {
             name: "Rok rok Waterfall",
+            alt: "Air Terjun Rok rok",
             link: "rokrok",
             images: [
                 "https://i.ibb.co/hXT8S7b/1-rokrok-waterfall-kembes.jpg",
@@ -97,12 +102,13 @@ export default function Page({params}) {
         },
         {
             name: "Ror Beach",
+            alt: "Pantai Ror",
             link: "ror",
             images: [
                 "https://i.ibb.co/HHbW10M/1-pantai-ror.jpg",
                 "https://i.ibb.co/pyDqk45/2-pantai-ror.jpg",
             ],
-            embedLink:"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.1178846333487!2d124.96644317496528!3d1.0736223989160671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMDQnMjUuMCJOIDEyNMKwNTgnMDguNSJF!5e0!3m2!1sen!2sid!4v1690897136215!5m2!1sen!2sid",
+            embedLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.1178846333487!2d124.96644317496528!3d1.0736223989160671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMDQnMjUuMCJOIDEyNMKwNTgnMDguNSJF!5e0!3m2!1sen!2sid!4v1690897136215!5m2!1sen!2sid",
             parts: [
                 "Pantai ROR Terletak di Desa Bukit Tinggi, Kec. Kakas Barat, Kab. Minahasa",
                 "Di Pantai ROR kita akan menemukan pasir pantai yang lembut dan air pantai yang jernih dan di apit oleh dua tebing di sebelah sisi-sisinya sehingga memunculkan gambaran pemandangan yang unik, selain itu pantai ROR juga memiliki spot yang unik yaitu tebing batu yang menjorok ke laut sangat cocok untuk dijadikan tempat foto. Pantai ROR juga menyediakan fasilitas bagi pengunjung untuk bisa bersantai di tepian pantai menikmati indahnya suasana pantai yang nyaman dan bersih.",
@@ -126,17 +132,18 @@ export default function Page({params}) {
 
     return <div>
         <section id="navbar " className="pb-[12rem]">
-            <NavBar/>
+            <NavBar disableButtons/>
         </section>
-        <section id="main" className="px-3 sm:px-12 max-w-3xl mx-auto">
+        <section id="main" className="px-3 sm:px-12 max-w-3xl mx-auto text-neutral-600">
 
-            <div className="font-bold text-5xl py-5">{data.name}</div>
+            <div className="font-bold text-5xl pt-5">{data.alt}</div>
+            <div className="font-bold italic text-xl pt-2 pb-5 text-primary-600">{data.name}</div>
             <_buildImage src={data.images[0]}/>
-            <div className="w-1/2 h-0.5 bg-primary-400 rounded"></div>
+            <div className="w-1/2 h-0.5 bg-primary-600 rounded"></div>
 
             <div className="text-justify py-6">
                 {data.parts.map((e, i) => {
-                    if (e === "d") return <div className="my-4 w-1/2 h-0.5 bg-primary-400 rounded"></div>
+                    if (e === "d") return <div className="my-4 w-1/2 h-0.5 bg-primary-600 rounded"></div>
 
                     if (e === "i") return <_buildImage src={data.images[1]}/>;
 
@@ -151,7 +158,7 @@ export default function Page({params}) {
                     referrerPolicy="no-referrer-when-downgrade"/>
 
             <div className="text-center text-xs py-12">
-                <div className="h-[1px] w-1/2 bg-primary-400 rounded-xl mx-auto my-2"></div>
+                <div className="h-[1px] w-1/2 bg-primary-600 rounded-xl mx-auto my-2"></div>
                 <div>oleh: admin</div>
             </div>
 
