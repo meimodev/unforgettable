@@ -25,7 +25,7 @@ export default function Home() {
             ],
         },
         {
-            name: "Watu Pinawetengan Stone",
+            name: "Pinawetengan Stone",
             link: "pinawetengan",
             images: [
                 "https://i.ibb.co/r5ztqgV/1-watupinawetengan.jpg",
@@ -121,7 +121,8 @@ export default function Home() {
         <Link
             href={"/destinations/" + keyLink}
             className="flex-1 flex-col flex text-neutral-500  hover:text-primary-600  hover:-translate-y-2 transition ease-out duration-500 cursor-pointer ">
-            <img src={imageUrl} className="h-[9rem] sm:h-[13rem] md:h-[17rem] lg:h-[20rem]  w-full rounded-lg"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={imageUrl} className="h-[9rem] sm:h-[13rem] md:h-[17rem] lg:h-[20rem]  w-full rounded-lg" alt="image"/>
             <div className="text-center uppercase pt-2 font-bold ">{title}</div>
         </Link>;
 
@@ -133,7 +134,8 @@ export default function Home() {
             duration={500}
             className="flex-col flex rounded-xl px-6 text-neutral-500">
 
-            <img src={imageUrl} className="h-[20rem] sm:h-[30rem] w-full rounded-lg object-cover"/>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={imageUrl} className="h-[20rem] sm:h-[30rem] w-full rounded-lg object-cover" alt="image"/>
             <div className="text-center uppercase pt-5 text-lg font-bold">{title}</div>
 
             <a href={href} target="_blank"
@@ -168,6 +170,7 @@ export default function Home() {
         <div className="max-w-4xl  flex justify-center gap-3 cursor-pointer group">
             <a href={href} target="_blank"
                className="border-transparent border-b-neutral-500 border-2 p-3 rounded-md flex items-center gap-3 transition group-hover:border-primary-600 duration-500 ease-out group-hover:-translate-y-1 ">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={iconSrc}
                      alt="social media icon"
                      className="h-5 w-5"
@@ -178,9 +181,11 @@ export default function Home() {
 
     return (
         <div className="scroll-smooth">
+            {/* eslint-disable-next-line @next/next/google-font-display,@next/next/no-page-custom-font */}
             <link rel="stylesheet"
                   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 
+            {/* eslint-disable-next-line @next/next/google-font-display,@next/next/no-page-custom-font */}
             <link rel="stylesheet"
                   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 
