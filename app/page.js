@@ -83,8 +83,8 @@ export default function Home() {
             location: "Remboken",
             href: "https://goo.gl/maps/QLC7TUUC8MBzY2wf6",
             images: [
-                "https://i.ibb.co/4Z0Rqvv/1-camp-james.jpg",
                 "https://i.ibb.co/yd3z96j/2-camp-james.jpg",
+                "https://i.ibb.co/4Z0Rqvv/1-camp-james.jpg",
             ],
         },
         {
@@ -96,24 +96,24 @@ export default function Home() {
                 "https://i.ibb.co/Qm7229g/2-lunas.jpg",
             ],
         },
-        // {
-        //     name: "Wale Walanda",
-        // location: "Tondano",
-        // href: "https://goo.gl/maps/uVVgAvHhdudvMtcTA",
-        //     images: [
-        //         "",
-        //         "",
-        //     ],
-        // },
-        // {
-        //     name: "Astound Hill",
-        // location: "Tondano",
-        // href: "https://goo.gl/maps/3hL87TPLtGabPrSA6",
-        //     images: [
-        //         "",
-        //         "",
-        //     ],
-        // },
+        {
+            name: "Wale Walanda",
+            location: "Tondano",
+            href: "https://goo.gl/maps/uVVgAvHhdudvMtcTA",
+            images: [
+                "https://i.ibb.co/6JH6ZR9/1-wale-walanda.jpg",
+                "",
+            ],
+        },
+        {
+            name: "Astound Hill",
+            location: "Tondano",
+            href: "https://goo.gl/maps/3hL87TPLtGabPrSA6",
+            images: [
+                "https://i.ibb.co/GTvBp55/2-astound-hill.jpg",
+                "",
+            ],
+        },
 
     ];
 
