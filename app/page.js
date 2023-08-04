@@ -4,6 +4,31 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 
+export const metadata = {
+    title: 'Explore The Paradise! Minahasa',
+    description: 'Enjoy your adventurous trip to Minahasa, where highlands, mountains, beaches, hot and cold springs, waterfalls, meets the rich cultural heritage scattered around the land',
+    generator: 'BPPD Minahasa',
+    applicationName: 'unforgettableminahasa.com',
+    referrer: 'origin-when-cross-origin',
+    keywords: ['Minahasa', 'unforgettable', 'adventure', 'explore', 'tourism', 'north sulawesi', 'BPPD Minahasa '],
+    authors: [{name: 'Badan Promosi Pariwisata Daerah', url: 'https://www.unforgettableminahasa.com'}],
+    themeColor: 'black',
+    colorScheme: 'light',
+    creator: 'meimodev',
+    publisher: 'meimodev',
+    robots: {
+        index: true,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            noimageindex: true,
+
+        },
+    },
+}
+
 export default function Home() {
 
     const videoMainUrl = "/video.mp4";
@@ -122,7 +147,8 @@ export default function Home() {
             href={"/destinations/" + keyLink}
             className="flex-1 flex-col flex text-neutral-500  hover:text-primary-600  hover:-translate-y-2 transition ease-out duration-500 cursor-pointer ">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={imageUrl} className="h-[9rem] sm:h-[13rem] md:h-[17rem] lg:h-[20rem]  w-full rounded-lg" alt="image"/>
+            <img src={imageUrl} className="h-[9rem] sm:h-[13rem] md:h-[17rem] lg:h-[20rem]  w-full rounded-lg"
+                 alt="image"/>
             <div className="text-center uppercase pt-2 font-bold ">{title}</div>
         </Link>;
 
