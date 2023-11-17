@@ -5,8 +5,10 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-    title: 'Explore The Paradise! Minahasa',
-    description: 'Enjoy your adventurous trip to Minahasa, where highlands, mountains, beaches, hot and cold springs, waterfalls, meets the rich cultural heritage scattered around the land @BPPD Minahasa',
+    title: 'Minahasa Wakefest series 2023',
+    // title: 'Explore The Paradise! Minahasa',
+    description: 'WWF Wakefest Series in Lake Tondano, Minahasa',
+    // description: 'Enjoy your adventurous trip to Minahasa, where highlands, mountains, beaches, hot and cold springs, waterfalls, meets the rich cultural heritage scattered around the land @BPPD Minahasa',
     generator: 'BPPD Minahasa',
     applicationName: 'unforgettableminahasa.com',
     referrer: 'origin-when-cross-origin',
