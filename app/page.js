@@ -31,7 +31,9 @@ export const metadata = {
 
 export default function Home() {
 
-    const videoMainUrl = "/video.mp4";
+    const videoMainUrl = "https://dl.dropboxusercontent.com/scl/fi/wfu9vr3reou0nzobv8xtw/Wakefest-promotional.mp4?rlkey=ba4perggcgyscm73zzesk6gqg&dl=0";
+    // const videoMainUrl = "https://www.dropbox.com/scl/fi/mwjlzb2jshizx1mwk8ha3/main-banner-unforgettable-minahasa.mp4?rlkey=iv5b142tm8sloffnruaw9pkp0&dl=0";
+    // const videoMainUrl = "/video.mp4";
     const destinations = [
         {
             name: "Kengkang Waterfall",
