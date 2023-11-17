@@ -234,15 +234,16 @@ export default function Home() {
                     <div className="h-full text-4xl flex-1 flex flex-col justify-center ">
                         <Fade cascade damping={1} direction={"down"}
                               className="uppercase text-center font-black text-neutral-300">
-                            <div className="">EXPLORE</div>
-                            <div className="flex gap-2 justify-center">
-                                <Fade cascade delay={750} damping={1} direction={"down"}>
-                                    <div className="">THE</div>
-                                    <div className="text-primary-600 stroke-1 stroke-primary-50">PARADISE</div>
-                                </Fade>
-                            </div>
-                            <div className="">MINAHASA</div>
-                            <div className='h-0.5 w-1/4  bg-primary-600 my-6 mx-auto'/>
+                            {/*DISABLED DUE TO THE BG VIDEO ALREADY CONTAIN TEXT*/}
+                            {/*<div className="">EXPLORE</div>*/}
+                            {/*<div className="flex gap-2 justify-center">*/}
+                            {/*    <Fade cascade delay={750} damping={1} direction={"down"}>*/}
+                            {/*        <div className="">THE</div>*/}
+                            {/*        <div className="text-primary-600 stroke-1 stroke-primary-50">PARADISE</div>*/}
+                            {/*    </Fade>*/}
+                            {/*</div>*/}
+                            {/*<div className="">MINAHASA</div>*/}
+                            {/*<div className='h-0.5 w-1/4  bg-primary-600 my-6 mx-auto'/>*/}
 
                         </Fade>
                     </div>
