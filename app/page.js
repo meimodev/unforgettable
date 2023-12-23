@@ -24,10 +24,37 @@ export const metadata = {
             index: true,
             follow: true,
             noimageindex: true,
-
         },
     },
 }
+
+const imageAssets = [
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_kengkang.jpg?updatedAt=1703067209809",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_kengkang.jpg?updatedAt=1703067211262",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_ranolewo.jpg?updatedAt=1703067206683",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_ranolewo.jpg?updatedAt=1703067206433",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_watupinawetengan.jpg?updatedAt=1703067207459",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_watupinawetengan.jpg?updatedAt=1703067207599",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_benteng_moraya.jpg?updatedAt=1703067205993",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_benteng_moraya.jpg?updatedAt=1703067207093",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_rokrok_waterfall_kembes.jpg?updatedAt=1703303070383",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_rokrok_waterfall_kembes.jpg?updatedAt=1703067207581",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_pantai_ror.jpg?updatedAt=1703067207590",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_pantai_ror.jpg?updatedAt=1703067206905",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_yamaresort.jpg?updatedAt=1703067210253",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_yamaresort.jpg?updatedAt=1703067211587",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_D88.jpg?updatedAt=1703067209118",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_D88.jpg?updatedAt=1703067210904",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_camp_james.jpg?updatedAt=1703067206701",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_camp_james.jpg?updatedAt=1703067210207",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_lunas.jpg?updatedAt=1703067209918",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_lunas.jpg?updatedAt=1703067211278",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_wale_walanda.jpg?updatedAt=1703067212552",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_wale_walanda.jpg?updatedAt=1703067211033",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/1_astound_hill.jpg?updatedAt=1703297679721",
+    "https://ik.imagekit.io/zwwatezewlj/unforgettable%20minahasa/2_astound_hill.jpg?updatedAt=1703297679674",
+];
+
 
 export default function Home() {
 
@@ -37,48 +64,48 @@ export default function Home() {
             name: "Kengkang Waterfall",
             link: "kengkang",
             images: [
-                "https://i.ibb.co/X3yGjdH/1-kengkang.jpg",
-                "https://i.ibb.co/Jn7NkcZ/2-kengkang.jpg",
+                imageAssets[0],
+                imageAssets[1],
             ],
         },
         {
             name: "Ranolewo Hot Spring",
             link: "ranolewo",
             images: [
-                "https://i.ibb.co/MpQvJ6z/1-ranolewo.jpg",
-                "https://i.ibb.co/WH5tDtx/2-ranolewo.jpg",
+                imageAssets[2],
+                imageAssets[3],
             ],
         },
         {
             name: "Pinawetengan Stone",
             link: "pinawetengan",
             images: [
-                "https://i.ibb.co/r5ztqgV/1-watupinawetengan.jpg",
-                "https://i.ibb.co/VSxXv2y/2-watupinawetengan.jpg",
+                imageAssets[4],
+                imageAssets[5],
             ],
         },
         {
             name: "Moraya Fortress",
             link: "moraya",
             images: [
-                "https://i.ibb.co/DD4Jx08/1-benteng-moraya.jpg",
-                "https://i.ibb.co/SQtBp1M/2-benteng-moraya.jpg",
+                imageAssets[6],
+                imageAssets[7],
             ],
         },
         {
             name: "Rok rok Waterfall",
             link: "rokrok",
             images: [
-                "https://i.ibb.co/hXT8S7b/1-rokrok-waterfall-kembes.jpg",
-                "https://i.ibb.co/R647ySt/2-rokrok-waterfall-kembes.jpg",
+                imageAssets[8],
+                imageAssets[9],
             ],
         },
         {
             name: "Ror Beach",
             link: "ror",
             images: [
-                "https://i.ibb.co/HHbW10M/1-pantai-ror.jpg",
-                "https://i.ibb.co/pyDqk45/2-pantai-ror.jpg",
+                imageAssets[10],
+                imageAssets[11],
             ],
         },
 
@@ -90,8 +117,8 @@ export default function Home() {
             location: "Tondano",
             href: "https://goo.gl/maps/u7kmk3jRSaAyYwoo9",
             images: [
-                "https://i.ibb.co/RNVxh0F/1-yamaresort.jpg",
-                "https://i.ibb.co/n1g0CJF/2-yamaresort.jpg",
+                imageAssets[12],
+                imageAssets[13],
             ],
         },
         {
@@ -99,8 +126,8 @@ export default function Home() {
             location: "Tondano",
             href: "https://goo.gl/maps/zf4oxeFVbZtQJZhe6",
             images: [
-                "https://i.ibb.co/C8SF1FP/1-D88.jpg",
-                "https://i.ibb.co/Kb7R9mf/2-D88.jpg",
+                imageAssets[14],
+                imageAssets[15],
             ],
         },
         {
@@ -108,8 +135,8 @@ export default function Home() {
             location: "Remboken",
             href: "https://goo.gl/maps/QLC7TUUC8MBzY2wf6",
             images: [
-                "https://i.ibb.co/yd3z96j/2-camp-james.jpg",
-                "https://i.ibb.co/4Z0Rqvv/1-camp-james.jpg",
+                imageAssets[16],
+                imageAssets[17],
             ],
         },
         {
@@ -117,8 +144,8 @@ export default function Home() {
             location: "Tondano",
             href: "https://goo.gl/maps/WPwfcgMcihh7iEcL8",
             images: [
-                "https://i.ibb.co/9yjM6W1/1-lunas.jpg",
-                "https://i.ibb.co/Qm7229g/2-lunas.jpg",
+                imageAssets[18],
+                imageAssets[19],
             ],
         },
         {
@@ -126,8 +153,8 @@ export default function Home() {
             location: "Tondano",
             href: "https://goo.gl/maps/uVVgAvHhdudvMtcTA",
             images: [
-                "https://i.ibb.co/6JH6ZR9/1-wale-walanda.jpg",
-                "",
+                imageAssets[20],
+                imageAssets[21],
             ],
         },
         {
@@ -135,8 +162,8 @@ export default function Home() {
             location: "Tondano",
             href: "https://goo.gl/maps/3hL87TPLtGabPrSA6",
             images: [
-                "https://i.ibb.co/GTvBp55/2-astound-hill.jpg",
-                "",
+                imageAssets[22],
+                imageAssets[23],
             ],
         },
 
@@ -315,9 +342,7 @@ export default function Home() {
                             href={e.href}
                             imageUrl={e.images[0]}/>
                     )}
-
                 </Carousel>
-
 
             </section>
 
@@ -352,9 +377,6 @@ export default function Home() {
                 <Footer/>
             </section>
 
-
         </div>
-
-
     )
 }
