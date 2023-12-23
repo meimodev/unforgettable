@@ -5,10 +5,8 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-    title: 'Minahasa Wakefest series 2023',
-    // title: 'Explore The Paradise! Minahasa',
-    description: 'WWF Wakefest Series in Lake Tondano, Minahasa',
-    // description: 'Enjoy your adventurous trip to Minahasa, where highlands, mountains, beaches, hot and cold springs, waterfalls, meets the rich cultural heritage scattered around the land @BPPD Minahasa',
+    title: 'Explore The Paradise! Minahasa',
+    description: 'Enjoy your adventurous trip to Minahasa, where highlands, mountains, beaches, hot and cold springs, waterfalls, meets the rich cultural heritage scattered around the land @BPPD Minahasa',
     generator: 'BPPD Minahasa',
     applicationName: 'unforgettableminahasa.com',
     referrer: 'origin-when-cross-origin',
@@ -33,9 +31,7 @@ export const metadata = {
 
 export default function Home() {
 
-    const videoMainUrl = "https://dl.dropboxusercontent.com/scl/fi/wfu9vr3reou0nzobv8xtw/Wakefest-promotional.mp4?rlkey=ba4perggcgyscm73zzesk6gqg&dl=0";
-    // const videoMainUrl = "https://www.dropbox.com/scl/fi/mwjlzb2jshizx1mwk8ha3/main-banner-unforgettable-minahasa.mp4?rlkey=iv5b142tm8sloffnruaw9pkp0&dl=0";
-    // const videoMainUrl = "/video.mp4";
+    const videoMainUrl = "https://dl.dropbox.com/scl/fi/mwjlzb2jshizx1mwk8ha3/main-banner-unforgettable-minahasa.mp4?rlkey=iv5b142tm8sloffnruaw9pkp0&dl=0";
     const destinations = [
         {
             name: "Kengkang Waterfall",
