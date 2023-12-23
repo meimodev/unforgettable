@@ -1,14 +1,17 @@
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
+import imageAssets from "@/app/img_sources";
+
+
 const destinations = [
     {
         name: "Kengkang Waterfall",
         alt: "Air Terjun Kengkang",
         link: "kengkang",
         images: [
-            "https://i.ibb.co/X3yGjdH/1-kengkang.jpg",
-            "https://i.ibb.co/Jn7NkcZ/2-kengkang.jpg",
+            imageAssets[0],
+            imageAssets[1],
         ],
         embedLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2922.3991586146662!2d124.7338475895366!3d1.2818942754187255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTYnNTUuMyJOIDEyNMKwNDQnMDguNyJF!5e0!3m2!1sen!2sid!4v1690896309296!5m2!1sen!2sid",
         parts: [
@@ -25,8 +28,8 @@ const destinations = [
         alt: "Mata Air Panas Ranolewo",
         link: "ranolewo",
         images: [
-            "https://i.ibb.co/MpQvJ6z/1-ranolewo.jpg",
-            "https://i.ibb.co/WH5tDtx/2-ranolewo.jpg",
+            imageAssets[2],
+            imageAssets[3],
         ],
         embedLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.9912630196063!2d124.81815817496543!3d1.1666386988222104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMDknNTkuOSJOIDEyNMKwNDknMTQuNiJF!5e0!3m2!1sen!2sid!4v1690896837558!5m2!1sen!2sid",
         parts: [
@@ -43,8 +46,8 @@ const destinations = [
         alt: "Batu Pinawetengan",
         link: "pinawetengan",
         images: [
-            "https://i.ibb.co/r5ztqgV/1-watupinawetengan.jpg",
-            "https://i.ibb.co/VSxXv2y/2-watupinawetengan.jpg",
+            imageAssets[4],
+            imageAssets[5],
         ],
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0017017324603!2d124.76635417877802!3d1.1592526958120055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32874429a7587e29%3A0x78707c9c905bcd7c!2sWatu%20Pinabetengan!5e0!3m2!1sen!2sid!4v1690896914178!5m2!1sen!2sid",
         parts: [
@@ -67,8 +70,8 @@ const destinations = [
         alt: "Benteng Moraya",
         link: "moraya",
         images: [
-            "https://i.ibb.co/DD4Jx08/1-benteng-moraya.jpg",
-            "https://i.ibb.co/SQtBp1M/2-benteng-moraya.jpg",
+            imageAssets[6],
+            imageAssets[7],
         ],
         embedLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4024361367033!2d124.90695980651236!3d1.291430423751612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x328715674dc9331d%3A0xe4cb5d2772b1bdd1!2sBenteng%20Moraya!5e0!3m2!1sen!2sid!4v1690896995809!5m2!1sen!2sid",
         parts: [
@@ -86,8 +89,8 @@ const destinations = [
         alt: "Air Terjun Rok rok",
         link: "rokrok",
         images: [
-            "https://i.ibb.co/hXT8S7b/1-rokrok-waterfall-kembes.jpg",
-            "https://i.ibb.co/R647ySt/2-rokrok-waterfall-kembes.jpg",
+            imageAssets[8],
+            imageAssets[9],
         ],
         embedLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7685.454370016536!2d124.87811497965338!3d1.3715643571009801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMjInMTYuOSJOIDEyNMKwNTInNTcuNiJF!5e0!3m2!1sen!2sid!4v1690897083775!5m2!1sen!2sid",
         parts: [
@@ -103,8 +106,8 @@ const destinations = [
         alt: "Pantai Ror",
         link: "ror",
         images: [
-            "https://i.ibb.co/HHbW10M/1-pantai-ror.jpg",
-            "https://i.ibb.co/pyDqk45/2-pantai-ror.jpg",
+            imageAssets[10],
+            imageAssets[11],
         ],
         embedLink: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3989.1178846333487!2d124.96644317496528!3d1.0736223989160671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMDQnMjUuMCJOIDEyNMKwNTgnMDguNSJF!5e0!3m2!1sen!2sid!4v1690897136215!5m2!1sen!2sid",
         parts: [
