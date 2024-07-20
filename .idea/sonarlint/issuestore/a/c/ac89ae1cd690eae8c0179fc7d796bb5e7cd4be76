@@ -1,17 +1,22 @@
 
-ïjavascript:S6851˜"ÅRedundant alt attribute. Screen-readers already announce `img` tags as an image. You don\u8217t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop.(úîàøÿÿÿÿ8û‹¹¦É1
-ïjavascript:S6851¦"ÅRedundant alt attribute. Screen-readers already announce `img` tags as an image. You don\u8217t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop.(š¼«ùÿÿÿÿ8ü‹¹¦É1
-cjavascript:S6770ƒ"?Imported JSX component _buildSectionTitle must be in PascalCase(å‡Ÿ•8ü‹¹¦É1
-kjavascript:S6770‡"BImported JSX component _buildDestinationCard must be in PascalCase(çÍöéşÿÿÿÿ8ü‹¹¦É1
-kjavascript:S6770‹"BImported JSX component _buildDestinationCard must be in PascalCase(çÍöéşÿÿÿÿ8ü‹¹¦É1
-kjavascript:S6770‘"BImported JSX component _buildDestinationCard must be in PascalCase(çÍöéşÿÿÿÿ8ü‹¹¦É1
-kjavascript:S6770•"BImported JSX component _buildDestinationCard must be in PascalCase(çÍöéşÿÿÿÿ8ü‹¹¦É1
-kjavascript:S6770›"BImported JSX component _buildDestinationCard must be in PascalCase(çÍöéşÿÿÿÿ8ü‹¹¦É1
-kjavascript:S6770Ÿ"BImported JSX component _buildDestinationCard must be in PascalCase(çÍöéşÿÿÿÿ8ü‹¹¦É1
-cjavascript:S6770©"?Imported JSX component _buildSectionTitle must be in PascalCase(×ƒºÉ8ü‹¹¦É1
-djavascript:S6770¹"AImported JSX component _buildResortCardItem must be in PascalCase(“ù€g8ü‹¹¦É1
-Bjavascript:S6479º"Do not use Array index in keys(×çÙÙ8ı‹¹¦É1
-cjavascript:S6770Æ"?Imported JSX component _buildSectionTitle must be in PascalCase(§°×Æ8ı‹¹¦É1
-gjavascript:S6770Ê"DImported JSX component _buildSocialMediaButton must be in PascalCase(ğŞ8ı‹¹¦É1
-gjavascript:S6770Ï"DImported JSX component _buildSocialMediaButton must be in PascalCase(ğŞ8ı‹¹¦É1
-gjavascript:S6770Ô"DImported JSX component _buildSocialMediaButton must be in PascalCase(ğŞ8ı‹¹¦É1
+tjavascript:S6774n"&'title' is missing in props validation(«ı¹şøÿÿÿÿ8ó€Û2J$1bedbe4b-673e-4c1d-b051-6babc40813f7
+wjavascript:S6774n")'imageUrl' is missing in props validation(«ı¹şøÿÿÿÿ8ó€Û2J$7e809ad6-13fb-43b4-8347-8205d2d82c58
+vjavascript:S6774n"('keyLink' is missing in props validation(«ı¹şøÿÿÿÿ8ó€Û2J$373c57d0-07ee-43e1-8f6c-9b5a337ffe08
+ javascript:S6478n"RMove this component definition out of the parent component and pass data as props.(«ı¹şøÿÿÿÿ8ó€Û2J$9ee4c16a-9dac-4d6c-a8f3-83ba8daa4f98
+”javascript:S6851s"ÅRedundant alt attribute. Screen-readers already announce `img` tags as an image. You don\u8217t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop.(úîàøÿÿÿÿ8ó€Û2J$6f5fe9bb-39e8-4742-9088-3bdc4d84e8c8
+•javascript:S6851"ÅRedundant alt attribute. Screen-readers already announce `img` tags as an image. You don\u8217t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop.(š¼«ùÿÿÿÿ8ó€Û2J$623a3156-1227-407e-ac34-b3570c719559
+‰javascript:S6770Ş"?Imported JSX component _buildSectionTitle must be in PascalCase(å‡Ÿ•8ó€Û2J$d95df10a-f7b1-4ebb-83b5-a1c58dec95fd
+Œjavascript:S6770â"BImported JSX component _BuildDestinationCard must be in PascalCase(´ë´°8ó€Û2J$ab34f12e-8b1d-4cfe-9da6-dbd6a02d203f
+Œjavascript:S6770æ"BImported JSX component _BuildDestinationCard must be in PascalCase(´ë´°8ó€Û2J$16ff8abe-aebf-485f-9c9d-30e70a9502f9
+Œjavascript:S6770ì"BImported JSX component _BuildDestinationCard must be in PascalCase(´ë´°8ó€Û2J$fb3dd083-734f-4714-852e-d8c1f8c38e20
+‰javascript:S6770…"?Imported JSX component _buildSectionTitle must be in PascalCase(×ƒºÉ8ó€Û2J$f0328a6f-4e84-4d88-b0cc-e4d90b526238
+Šjavascript:S6770•"AImported JSX component _buildResortCardItem must be in PascalCase(“ù€g8ó€Û2J$fdce01f0-95a3-4438-bf78-a691477c1f3a
+hjavascript:S6479–"Do not use Array index in keys(×çÙÙ8ó€Û2J$f22d46d0-cc46-4e09-a9b7-fcd1518e6bc1
+‰javascript:S6770£"?Imported JSX component _buildSectionTitle must be in PascalCase(ş¥ØÏ8ó€Û2J$7f985daa-58a0-4aa0-a667-fd31b2ff0cfa
+Œjavascript:S6770§"BImported JSX component _BuildDestinationCard must be in PascalCase(´ë´°8ó€Û2J$337d2ea5-bd8f-47fd-a9d9-5bfc4b8e2887
+Œjavascript:S6770«"BImported JSX component _BuildDestinationCard must be in PascalCase(´ë´°8ó€Û2J$15d49d7e-3bb3-47ce-8e26-b1275344faf0
+Œjavascript:S6770±"BImported JSX component _BuildDestinationCard must be in PascalCase(´ë´°8ó€Û2J$7db64067-69dc-482e-a977-f577b31f128c
+‰javascript:S6770½"?Imported JSX component _buildSectionTitle must be in PascalCase(§°×Æ8ó€Û2J$c68bc561-2a01-4811-a918-8551a8c75de5
+javascript:S6770Á"DImported JSX component _buildSocialMediaButton must be in PascalCase(ğŞ8ó€Û2J$a33eee08-297d-47e6-a896-169130b2d2f1
+javascript:S6770Æ"DImported JSX component _buildSocialMediaButton must be in PascalCase(ğŞ8÷€Û2J$1693a2e8-92d3-4a34-a7cb-12aa1da8f0e2
+javascript:S6770Ë"DImported JSX component _buildSocialMediaButton must be in PascalCase(ğŞ8÷€Û2J$e59739ca-0886-43be-9fe0-253686ae996a

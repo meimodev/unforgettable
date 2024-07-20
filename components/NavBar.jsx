@@ -12,7 +12,7 @@ export default function NavBar({disableButtons = false}) {
         className="fixed bg-gradient-to-b from-neutral-900 via-neutral-700/50 to-transparent left-0 right-0 top-0 z-40 pb-14 ">
         <div className="px-6 sm:px-12 md:px-24">
             <div className='flex justify-center sm:justify-between items-center'>
-                <a href="#main" className="w-[12rem]">
+                <a href="/" className="w-[12rem]">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src="/logo-white.png" alt="logo white" className="w-full"/>
                 </a>
